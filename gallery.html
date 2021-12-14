@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Морските обитатели</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/other/favicon.ico" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="indexCSS.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="jquery.bxslider.min.css">
+</head>
+
+<body>
+    <div id="side">
+        <a href="index.html"><img id="logo" src="images/other/logo2.png"></a>
+    </div>
+    <div id="main">
+
+        <h1>Gallery</h1>
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script>
+            $(function() {
+                $('.bxslider').bxSlider({
+                    mode: 'fade',
+                    captions: true,
+                    slideWidth: 600,
+                    auto: true,
+                    autoControls: true,
+                    stopAutoOnClick: true,
+                    pager: true
+                });
+            });
+        </script>
+
+
+        <div class="gallery">
+            <div class="bxslider">
+                <div><img src="images/animals/a.jpg"></div>
+                <div><img src="images/animals/b.jpg"></div>
+                <div><img src="images/animals/c.jpg"></div>
+                <div><img src="images/animals/d.jpg"></div>
+            </div>
+        </div>
+        <footer>
+            <a href="index.html" class="footer">home</a>&nbsp; &nbsp;<br class="rwd-break">
+            <a href="information.html" class="footer">about the site</a>&nbsp; &nbsp;<br class="rwd-break">
+            <a href="cleanocean.html" class="footer">save the oceans</a>&nbsp; &nbsp;<br class="rwd-break">
+            <a href="form.html" class="footer">questions</a>&nbsp; &nbsp;<br class="rwd-break">
+            <a href="documentary.html" class="footer">documentary</a>&nbsp;&nbsp;<br class="rwd-break">
+            <a href="gallery.html" class="footer">gallery</a><br><br> Web page created by Kaloyan Nechev
+        </footer>
+    </div>
+
+</body>
+
+</html>

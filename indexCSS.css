@@ -1,0 +1,251 @@
+    body {
+        background-image: url("images/other/water.jpg");
+        font-family: 'Exo 2', sans-serif;
+        text-align: center;
+        margin: 0;
+        cursor: url("images/other/fishcursor.cur"), auto;
+    }
+    
+    h1 {
+        color: white;
+        text-shadow: 3px 3px 1px black;
+    }
+    
+    ul {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    li {
+        display: inline-block;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+    }
+    
+    a {
+        text-shadow: 3px 3px 1px black;
+        color: white;
+        text-decoration: none;
+        font-size: xx-large;
+    }
+    
+    footer {
+        margin: 5% 0 5% 0;
+        color: #ffea00;
+        font-weight: bold;
+        font-size: larger;
+        text-shadow: 3px 3px 1px #4a4400;
+    }
+    
+    .footer {
+        margin: 5% 0 5% 0;
+        color: #ffea00;
+        font-weight: bold;
+        font-size: larger;
+        text-shadow: 3px 3px 1px #4a4400;
+    }
+    
+    #dolphin,
+    .movable {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 20%;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    #beachball {
+        height: auto;
+        width: 10%;
+        position: relative;
+        margin: 0 50% 0 50%;
+    }
+    
+    #dolphinball {
+        margin: 10% 0 10% 0;
+    }
+    
+    #turtleplusjelly {
+        margin-bottom: 10%;
+    }
+    
+    #seaturtle {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        width: 25%;
+        height: auto;
+    }
+    
+    #jellyfish {
+        margin: 3% 50% 5% 50%;
+        height: auto;
+        width: 10%;
+        position: relative;
+    }
+    
+    #fish {
+        margin-right: 25%;
+        margin-left: 25%;
+        height: auto;
+        width: 50%;
+        position: relative;
+    }
+    
+    #shark {
+        margin: 0 auto;
+        position: relative;
+        content: url("images/animals/shark.png");
+        max-width: 50vw;
+        max-height: 50vh;
+    }
+    
+    #shark:hover {
+        /*когато мишката е поставена върху акулата курсора се скрива и изображението се сменя */
+        content: url("images/animals/shark1.png");
+        cursor: none;
+    }
+    
+    #octopus {
+        margin-right: 25%;
+        margin-left: 25%;
+        height: auto;
+        width: 50%;
+        position: relative;
+    }
+    
+    #side {
+        margin-top: 2%;
+        margin-left: 3%;
+        width: 10%;
+        height: 100%;
+        flex-wrap: wrap;
+        float: left;
+        flex-direction: row;
+    }
+    
+    #logo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    
+    .socials {
+        width: 50%;
+        height: auto;
+        margin-bottom: 15%;
+    }
+    
+    #main {
+        display: block;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+    }
+    
+    #secondary {
+        color: #e2285e;
+        font-size: 2em;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #C12250;
+        text-align: left;
+    }
+    
+    .facts {
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        /*когато екрана е с размер 1000px и по-малко тези настройки се прилагат върху страницата  */
+        #side {
+            display: none;
+        }
+        #secondary {
+            color: #ffea00;
+            font-size: 1em;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #4a4400;
+        }
+        footer {
+            color: #e2285e;
+            text-shadow: 1px 2px 2px #c1224fa8;
+            font-weight: bold;
+            font-size: large;
+        }
+        li {
+            display: block;
+        }
+        ul {
+            margin-bottom: 20%;
+        }
+        iframe {
+            width: 450;
+            height: 350;
+        }
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        /*когато екрана е с размер 1000px и по-голям тези настройки се прилагат върху страницата  */
+        .rwd-break {
+            display: none;
+        }
+    }
+    
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20%;
+    }
+    
+    td,
+    th {
+        border: 1px solid #4a4400;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    td {
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #e2285e;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: #ffea00;
+    }
+    
+    td,
+    th #cleanocean {
+        text-align: justify;
+    }
+    
+    textarea {
+        resize: none;
+        overflow: scroll;
+    }
+    
+    .form {
+        font-family: 'Exo 2', sans-serif;
+        color: white;
+        text-shadow: 3px 3px 1px black;
+    }
+    
+    input:focus {
+        background-color: #ffea00;
+    }
+    
+    .gallery {
+        margin-left: 10%;
+    }
